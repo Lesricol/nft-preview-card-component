@@ -17,29 +17,51 @@ ul {
   margin-bottom: 0;
 }
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
+  width: 375px;
+  height: 667px;
   font-family: "Outfit", sans-serif;
   font-size: 0.9375rem;
-  width: 375px;
   background-color: #0D192C;
   color: #8BACD9 ;
 }
-main{
+.card{
+  padding: 1.5rem;
   width: 327px;
   background-color: #15263F;
   border-radius: 0.9375rem;
 }
 
-.card{
-  padding: 1.5rem;
+@media screen and (width >=600px) {
+  .card{
+    width: 350px;
+  }
 }
 
+.icon-view{
+  position: absolute;
+  top: 200px;
+  left: 165px;
+  opacity: 0;
+}
 .title{
+  margin: 24px 0 12px;
   font-weight: 600;
   font-size: 1.375rem;
   color: white;
 }
+@media screen and (width >=600px) {
+  .title{
+    margin: 24px 0 16px ;
+  }
+  
+}
+
 .text{
+  margin: 0;
   font-weight: 300;
   font-size: 1.125rem;
 }
@@ -47,6 +69,15 @@ main{
 .card-info{
   display: flex;
   justify-content: space-between;
+  padding:  1rem 0;
+  border-bottom: 1px solid #979797;
+}
+
+@media screen and (width >=600px) {
+  .card-info{
+    padding: 1.5rem 0;
+  }
+  
 }
 
 .cositas{
@@ -61,6 +92,14 @@ main{
   display: flex;
   align-items: center ;
   gap: 1rem;
+  padding-top: 1rem;
+}
+
+@media screen and (width >=600px) {
+  .card-avatar{
+    padding-top: 1.5rem;
+  }
+  
 }
 
 .avatar{
@@ -68,4 +107,7 @@ main{
   height: 33px;
   border: 1px solid white;
   border-radius:50% ;
+}
+.text-card{
+  margin: 0;
 }
