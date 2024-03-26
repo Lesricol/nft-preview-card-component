@@ -17,9 +17,7 @@ ul {
   margin-bottom: 0;
 }
 body {
-  margin: 0;
-  width: 375px;
-  height: 667px;
+  margin: 0 auto;
   font-family: "Outfit", sans-serif;
   font-size: 0.9375rem;
   background-color: #0D192C;
@@ -29,7 +27,6 @@ body {
 main{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .card{
@@ -39,7 +36,15 @@ main{
   border-radius: 0.9375rem;
 }
 
+.img-card{
+  position: relative;
+}
 
+.icon-view{
+  position: absolute;
+  top: 150px;
+  right: 100px;
+}
 
 @media screen and (width >=600px) {
   .card{
@@ -47,18 +52,6 @@ main{
   }
 }
 
-.icon-view{
-  position: absolute;
-  top: 150px;
-  left: 165px;
-  opacity: 0;
-}
-
-@media (hover: hover) {
-  .icon-view{
-    opacity: 1;
-  }
-}
 
 .title{
   margin: 24px 0 12px;
